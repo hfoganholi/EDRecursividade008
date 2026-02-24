@@ -1,8 +1,8 @@
 /*
  * Exercício de recursividade, cálculo do resto de uma divisão
  * coletando dividendo e divisor.
- * versão 1.0
- * data 18/08/2025
+ * versão 1.1
+ * data 24/02/2026
  * programador Henrique Foganholi de Oliveira
  */
 
@@ -12,6 +12,7 @@ public class CalculoRestoController {
 	public CalculoRestoController() {
 		super();
 	}
+
 	public int restoDivisao(int A, int B) {
 		// Condição para dividendo negativo
 		// evita estouro de memória
@@ -21,12 +22,12 @@ public class CalculoRestoController {
 		if (B < 0) {
 			B = -B;
 		}
-		//Condição de parada
-		// Quando dividendo(A), for menor que o divisor(B), retorna A como resto.
+		// Condição de parada
+		// Quando dividendo(A), for menor que o divisor(B),
+		// retorna A como resto.
 		if (A < B) {
 			return A;
-		}
-		else {
+		} else {
 			return restoDivisao(A - B, B);
 		}
 	}

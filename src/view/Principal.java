@@ -1,8 +1,8 @@
 /*
  * Exercício de recursividade, cálculo do resto de uma divisão
  * coletando dividendo e divisor.
- * versão 1.0
- * data 18/08/2025
+ * versão 1.1
+ * data 24/02/2026
  * programador Henrique Foganholi de Oliveira
  */
 
